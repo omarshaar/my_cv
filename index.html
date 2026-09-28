@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="de" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfolio und Lebenslauf von Omar Shaar, Fachinformatiker für Anwendungsentwicklung aus Bonn." />
+    <title>Omar Shaar | Anwendungsentwickler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      /* Eano Visual Core tokens — primary kept as the CV's own amber accent */
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#F9A225",
+              secondary: "#0D0D0F",
+              paper: "#E7E7E5",
+              surface: "#FFFFFF",
+              muted: "#F3F3F2",
+              ink: { DEFAULT: "#0E0E10", soft: "#4A4A50", muted: "#9A9AA0" },
+              night: { DEFAULT: "#0D0D0F", soft: "#1C1C1F" },
+              signal: "#A3E635",
+            },
+            fontFamily: {
+              sans: ["Geist", "IBM Plex Sans Arabic", "ui-sans-serif", "system-ui", "sans-serif"],
+              display: ["Geist", "IBM Plex Sans Arabic", "ui-sans-serif", "sans-serif"],
+              mono: ["Geist Mono", "ui-monospace", "monospace"],
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="min-h-full bg-paper font-sans text-[.9375rem] text-ink antialiased selection:bg-primary selection:text-ink">
+    <div class="mx-auto flex min-h-svh w-full max-w-6xl flex-col gap-3 p-3 sm:p-4">
+    <header class="sticky top-3 z-50 sm:top-4">
+      <nav class="flex items-center justify-between gap-6 rounded-2xl bg-surface/90 px-5 py-3 shadow-[0_1px_2px_rgb(0_0_0/.04)] backdrop-blur-xl" aria-label="Hauptnavigation">
+        <a href="#start" dir="ltr" class="text-[1.0625rem] font-semibold tracking-tight">OS<span class="text-primary">.</span></a>
+        <div class="hidden items-center gap-6 text-ink-muted md:ms-auto md:flex">
+          <a class="nav-link" href="#profil">Profil</a><a class="nav-link" href="#kenntnisse">Kenntnisse</a><a class="nav-link" href="#laufbahn">Laufbahn</a><a class="nav-link" href="https://omarshaar.eano.dev" target="_blank" rel="noopener noreferrer">Portfolio</a>
+        </div>
+        <div class="flex items-center gap-2">
+          <div class="language-switcher flex rounded-full bg-muted p-1" role="group" aria-label="Sprache auswählen">
+            <button type="button" class="lang-btn" data-lang="de" aria-label="Deutsch">DE</button>
+            <button type="button" class="lang-btn" data-lang="en" aria-label="English">EN</button>
+            <button type="button" class="lang-btn" data-lang="ar" aria-label="العربية">AR</button>
+          </div>
+          <a href="mailto:omarshaar@eano.dev" class="contact-nav btn btn--primary btn--sm hidden sm:inline-flex">Kontakt</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="start" class="flex flex-1 flex-col gap-3">
+      <section>
+        <div class="hero-grid grid gap-3 lg:grid-cols-12">
+          <div class="name-panel relative flex min-h-[320px] flex-col justify-between gap-8 overflow-hidden rounded-[2rem] bg-surface p-7 sm:min-h-[420px] sm:p-10 lg:col-span-8 lg:min-h-[540px] lg:p-12">
+            <div class="flex items-center justify-between font-mono text-[.8125rem] text-ink-muted"><span>Bonn, Deutschland</span><span>Portfolio 2026</span></div>
+            <h1 class="text-[clamp(4.25rem,12vw,10.5rem)] font-semibold leading-[.8] tracking-[-.075em]">Omar<br /><span class="ml-[.34em] text-[#262626]">Shaar</span></h1>
+            <p class="max-w-sm text-[1.0625rem] font-medium leading-snug sm:text-xl">Fachinformatiker für<br />Anwendungsentwicklung</p>
+            <div class="orb" aria-hidden="true"></div>
+          </div>
+          <figure class="portrait-panel night-card flex min-h-[460px] flex-col gap-2 lg:col-span-4 lg:min-h-[540px]">
+            <div class="relative flex-1 overflow-hidden rounded-[1.5rem]">
+              <img src="assets/images/omar-shaar.jpg" alt="Porträt von Omar Shaar" class="absolute inset-0 h-full w-full object-cover object-top grayscale" />
+              <div class="absolute inset-0 bg-gradient-to-t from-night/70 via-transparent to-transparent"></div>
+            </div>
+            <figcaption class="flex items-center justify-between gap-3 rounded-2xl bg-white/[.04] p-2 ps-4">
+              <span class="text-[.9375rem] leading-snug text-white/60">Webentwicklung<br />mit Struktur und Fokus.</span><span class="icon-tile icon-tile--sm" aria-hidden="true"><svg viewBox="0 0 24 24" class="h-4 w-4"><path d="M7 7l10 10M17 8v9H8" /></svg></span>
+            </figcaption>
+          </figure>
+          <div class="flex flex-col gap-5 rounded-[2rem] bg-surface p-7 sm:flex-row sm:items-center sm:justify-between sm:p-8 lg:col-span-12">
+            <p class="max-w-2xl leading-relaxed text-ink-soft">Ich entwickle Webanwendungen mit Laravel, React und TypeScript. Dabei lege ich Wert auf sauberen Code, klare Strukturen und Lösungen, die im Alltag funktionieren.</p>
+            <a href="assets/Omar-Shaar-Lebenslauf.pdf" download class="btn btn--primary shrink-0">Lebenslauf laden <span aria-hidden="true"><svg viewBox="0 0 24 24" class="h-4 w-4"><path d="M12 4v12M6 11l6 6 6-6M5 20h14" /></svg></span></a>
+          </div>
+        </div>
+      </section>
+
+      <section id="profil" class="scroll-mt-24">
+        <div class="grid gap-10 rounded-[2rem] bg-surface p-7 sm:p-10 lg:grid-cols-12 lg:p-12">
+          <div class="lg:col-span-4"><p class="section-kicker">01 / Profil</p><h2 class="title-display mt-5"><span class="title-muted">Motivation</span> und Code.</h2></div>
+          <div class="lg:col-span-8 lg:pt-10"><blockquote class="text-[clamp(1.5rem,1.1rem+1.6vw,2.4rem)] font-medium leading-[1.2] tracking-[-.025em]">Moderne Webanwendungen sind der <span class="highlight">Schwerpunkt</span> meiner beruflichen Entwicklung.</blockquote><p class="mt-8 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-soft">Meine Umschulung zum Fachinformatiker für Anwendungsentwicklung habe ich erfolgreich abgeschlossen. Jetzt möchte ich meine Kenntnisse in Laravel, React, TypeScript, MySQL und REST-APIs weiter ausbauen und in einem professionellen Entwicklerteam einsetzen.</p></div>
+        </div>
+      </section>
+
+      <section id="kenntnisse" class="scroll-mt-24">
+        <div class="night-card text-white">
+          <div class="flex flex-col justify-between gap-5 px-4 pb-8 pt-6 sm:flex-row sm:items-end sm:px-7 sm:pt-8"><div><p class="section-kicker section-kicker--dark">02 / Kenntnisse</p><h2 class="title-display mt-4">Mein Werkzeug.</h2></div><p class="max-w-sm text-white/55">Technologien, mit denen ich Ideen in verlässliche digitale Produkte verwandle.</p></div>
+          <div class="grid gap-2 md:grid-cols-2 lg:grid-cols-3">
+            <article class="skill-card skill-card--primary"><span>01</span><h3>Laravel / PHP</h3><p>Strukturierte Anwendungen und robuste serverseitige Logik.</p></article>
+            <article class="skill-card"><span>02</span><h3>React / TypeScript</h3><p>Moderne, typisierte und wartbare Benutzeroberflächen.</p></article>
+            <article class="skill-card"><span>03</span><h3>JavaScript</h3><p>Interaktive Erlebnisse mit sauberer, verständlicher Logik.</p></article>
+            <article class="skill-card"><span>04</span><h3>HTML / CSS</h3><p>Semantische Grundlagen und responsive Oberflächen.</p></article>
+            <article class="skill-card"><span>05</span><h3>MySQL / REST APIs</h3><p>Daten strukturiert verwalten und Systeme sinnvoll verbinden.</p></article>
+            <article class="skill-card"><span>06</span><h3>Git / WordPress</h3><p>Versionierte Zusammenarbeit und flexible Weblösungen.</p></article>
+          </div>
+          <div class="mt-2 flex flex-wrap items-center gap-2 rounded-2xl bg-white/[.04] p-2 ps-4"><span class="me-2 font-mono text-[.8125rem] text-white/35">~/tools</span><span class="tool-pill">Microsoft Office</span><span class="tool-pill">Adobe Photoshop</span><span class="tool-pill">Adobe XD</span></div>
+        </div>
+      </section>
+
+      <section id="laufbahn" class="scroll-mt-24">
+        <div class="grid gap-3 lg:grid-cols-12">
+          <div class="rounded-[2rem] bg-surface p-7 sm:p-10 lg:col-span-4"><div class="lg:sticky lg:top-28"><p class="section-kicker">03 / Laufbahn</p><h2 class="title-display mt-5"><span class="title-muted">Wissen.</span> Praxis.<br />Weiter.</h2></div></div>
+          <div class="space-y-12 lg:col-span-8">
+            <div class="list-card"><h3 class="timeline-title">Ausbildung</h3><div class="timeline-list">
+              <article class="timeline-item"><time>07/2024 — 06/2026</time><div><h4>Fachinformatiker für Anwendungsentwicklung</h4><p>Umschulung · GLAMUS GmbH, Bonn · erfolgreich abgeschlossen</p></div></article>
+              <article class="timeline-item"><time>08/2023 — 12/2023</time><div><h4>Außerbetriebliche Ausbildung</h4><p>Fachinformatiker für Anwendungsentwicklung · FAW gGmbH, Bonn</p></div></article>
+              <article class="timeline-item"><time>08/2021 — 09/2022</time><div><h4>Einstiegsqualifizierung</h4><p>IT-Systemelektroniker · Telekom AG, Bonn</p></div></article>
+            </div></div>
+            <div class="list-card"><h3 class="timeline-title">Berufliche Erfahrung</h3><div class="timeline-list">
+              <article class="timeline-item"><time>05/2021 — 07/2021</time><div><h4>Datenerfasser im Impfzentrum</h4><p>Frenken &amp; Co., Bonn · Teilzeit</p></div></article>
+              <article class="timeline-item"><time>12/2020 — 05/2021</time><div><h4>Regalservice</h4><p>REWE Center, REWE Markt GmbH, Bonn · Teilzeit</p></div></article>
+            </div></div>
+            <div class="grid gap-3 sm:grid-cols-2">
+              <article class="mini-card"><div class="mini-card__tile mini-card__tile--grid"><i class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" class="h-6 w-6"><path d="M5 8h14M12 5v3M8 8c1 4 4 7 8 9M16 8c-1 4-4 7-8 9M13 21l4-9 4 9M14.5 18h5" /></svg></i></div><div class="p-4"><span>Sprachen</span><strong>Arabisch · Muttersprache<br />Deutsch · B2<br />Englisch · A2</strong></div></article>
+              <article class="mini-card mini-card--accent"><div class="mini-card__tile mini-card__tile--rings"><i class="icon-tile" aria-hidden="true"><svg viewBox="0 0 24 24" class="h-6 w-6"><path d="M3 9l9-5 9 5-9 5-9-5zM7 11.5V16c3 2.5 7 2.5 10 0v-4.5M21 9v5" /></svg></i></div><div class="p-4"><span>Weiterbildungen</span><strong>telc Deutsch B2 · 2023<br />telc Deutsch B1 · 2020</strong></div></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="rounded-[2.25rem] bg-surface p-2 shadow-[0_40px_60px_-45px_rgb(0_0_0/.4)]">
+        <div class="rounded-[1.75rem] border border-black/[.07] bg-muted px-6 py-12 sm:px-10 md:px-12 md:py-14">
+          <p class="section-kicker">04 / Kontakt</p><div class="mt-8 flex flex-col justify-between gap-10 lg:flex-row lg:items-end"><h2 class="title-display"><span class="title-muted">Lassen Sie uns</span> etwas bauen.</h2><div class="flex flex-col gap-2 sm:min-w-[20rem]"><a class="contact-link" href="mailto:omarshaar@eano.dev">omarshaar@eano.dev <span>↗</span></a><a class="contact-link" href="tel:+4915569484408">+49 15569 484408 <span>↗</span></a><a class="contact-link" href="https://omarshaar.eano.dev" target="_blank" rel="noreferrer">omarshaar.eano.dev <span>↗</span></a></div></div>
+          <div class="mt-14 flex flex-col gap-2 border-t border-black/[.07] pt-5 text-ink-muted sm:flex-row sm:justify-between"><span>© <span id="year"></span> Omar Shaar</span><span>Bonn, Deutschland</span></div>
+        </div>
+      </footer>
+    </main>
+    </div>
+    <button id="toTop" class="btn--primary fixed bottom-5 right-5 z-40 grid h-12 w-12 translate-y-20 place-items-center rounded-full opacity-0 transition-all" aria-label="Nach oben">↑</button>
+    <script src="js/main.js"></script>
+  </body>
+</html>
